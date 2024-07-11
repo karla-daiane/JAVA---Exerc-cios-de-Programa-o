@@ -18,15 +18,8 @@ public class DigitosPorExtenso {
 		
 		for (int i = 0; i < stringNumeros.length(); i++) {
 			resultado[i] = extenso[Character.getNumericValue(stringNumeros.charAt(i))];
-			//i < (stringNumeros.length() - 1) ? System.out.print(resultado[i] + ", ") : System.out.print(resultado[i]);
-			if (i < (stringNumeros.length() - 1) ) {
-				System.out.print(resultado[i] + ", ");
-			} else {
-				System.out.print(resultado[i]);
-			}
+			System.out.print(resultado[i] + (i < (stringNumeros.length() - 1) ? ", " : ""));
 		}
-		
-		
 		
 		sc.close();
 	}
