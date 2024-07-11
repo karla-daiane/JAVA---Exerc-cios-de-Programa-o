@@ -3,14 +3,14 @@ import java.util.Scanner;
 
 public class FuncaoConverterTemperatura {
 	public static double converterFahrenheitCelsius(double fahrenheit) {
-		double celcius;
-		celcius = (fahrenheit - 32) / 1.8;
-		return celcius;
+		double celsius;
+		celsius = (fahrenheit - 32) / 1.8;
+		return celsius;
 	}
 	
-	public static double converterCelsiusFahrenheit(double celcius) {
+	public static double converterCelsiusFahrenheit(double celsius) {
 		double fahrenheit;
-		fahrenheit = celcius * 1.8 + 32;
+		fahrenheit = celsius * 1.8 + 32;
 		return fahrenheit;
 	}
 	
@@ -22,7 +22,7 @@ public class FuncaoConverterTemperatura {
 		char escolhaTemperatura;
 		
 		System.out.println("Escolha a temperatura que deseja converter: \n"
-				+ "> F - Fahrenheit para Celcius \n> C - Celcius para Fahrenheit");
+				+ "> F - Fahrenheit para celsius \n> C - celsius para Fahrenheit");
 		escolhaTemperatura = sc.next().charAt(0);
 		
 		
@@ -51,6 +51,6 @@ public class FuncaoConverterTemperatura {
 }
 
 /*Faça um programa com duas funções, uma que recebe uma temperatura em 
- * Fahrenheit e retorna em Celcius e outra que faz o inverso. Lembrando 
+ * Fahrenheit e retorna em celsius e outra que faz o inverso. Lembrando 
  * que as fórmulas são ℃ = (℉ - 32) ÷ 1,8 e ℉ = ℃ × 1,8 + 32.
  */
